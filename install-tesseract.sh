@@ -1,3 +1,5 @@
+# 说明：此方式在 centos7 执行成功
+
 cd /opt
 
 yum -y update 
