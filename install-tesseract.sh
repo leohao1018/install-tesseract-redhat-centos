@@ -46,4 +46,9 @@ wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.word-freq
 wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.tesseract_cube.nn
 mv hin.* /usr/local/share/tessdata
 
+# cp /usr/local/lib/*.so.* /usr/lib64/
+# 如果需要在linux上运行带tess4j的项目，需要将/usr/local/lib下相关的tesseract和leptonica的library（.so）的文件复制到 /usr/lib下
+cp /usr/local/lib/*.so.* /usr/lib/
+cp /usr/local/lib/*.so /usr/lib/
+
 ln -s /opt/tesseract-3.05.01 /opt/tesseract-latest
